@@ -27,13 +27,16 @@ def volume(x):
 def test_trapz():
     x = np.array([0, 10])
     I = integrate.newton_cotes.trapz.evaluate(x, g)
-    assert I == 150.00
+    assert pytest.approx(I) == 150.00
 
 
 def test_simpson():
     x = np.array([0, 3])
     I = integrate.newton_cotes.simpson.evaluate(x, f)
-    assert I == 9.00
+    assert pytest.approx(I) == 9.00
+
+    with pytest.raises(ValueError):
+        I = integrate.newton_cotes.simpson.evalute([0], f)
 
 
 def test_monte1d():
