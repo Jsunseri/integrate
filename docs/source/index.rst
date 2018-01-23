@@ -8,6 +8,8 @@ Welcome to integrate's documentation!
 
 This is a small library that does basic Newton-Cotes and stochastic
 integration. 
+.. autofunction:: integrate.newton_cotes.simpson.evaluate
+.. autofunction:: integrate.newton_cotes.trapz.evaluate
 
 .. toctree::
    :maxdepth: 2
