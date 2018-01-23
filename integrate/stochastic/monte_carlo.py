@@ -12,6 +12,7 @@ def monte_1d(x, f, trials):
    return (b-a) * np.sum(y) / trials
 
 def monte_2d(f, v, domain, trials):
+   trials = float(trials)
    area = np.prod(domain[1] - domain[0])
    matrix = np.sqrt(area) * np.random.rand(trials, 2) + np.min(domain)
    v_eval = v(matrix) 
