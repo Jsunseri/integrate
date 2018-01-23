@@ -6,6 +6,9 @@
 Welcome to integrate's documentation!
 =====================================
 
+This is a small library that does basic Newton-Cotes and stochastic
+integration. 
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
