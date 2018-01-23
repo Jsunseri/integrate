@@ -1,4 +1,4 @@
-import setuptools
+gmport setuptools
 
 if __name__ == "__main__":
     setuptools.setup(
@@ -18,7 +18,6 @@ if __name__ == "__main__":
                 'sphinx==1.2.3',  # autodoc was broken in 1.3.1
                 'sphinxcontrib-napoleon',
                 'sphinx_rtd_theme',
-                'numpydoc',
             ],
             'tests': [
                 'pytest',
