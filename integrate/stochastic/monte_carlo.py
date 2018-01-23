@@ -9,7 +9,7 @@ def monte_1d(x, f, trials):
    b = x[1]
    d = (b - a) *  np.random.rand(1, trials) + a
    y = f(d)
-   return (b-a) * np.sum(y) / trials
+   return (b-a) * np.sum(y) / float(trials)
 
 def monte_2d(f, v, domain, trials):
    area = np.prod(domain[1] - domain[0])
