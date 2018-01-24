@@ -1,4 +1,4 @@
-"""
+""""
 Testing the integrate package
 """
 
@@ -36,7 +36,7 @@ def test_simpson():
     assert pytest.approx(I) == 9.00
 
     with pytest.raises(ValueError):
-        I = integrate.newton_cotes.simpson.evalute([0], f)
+        I = integrate.newton_cotes.simpson.evaluate([0], f)
 
 
 def test_monte1d():
